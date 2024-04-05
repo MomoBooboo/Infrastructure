@@ -3,3 +3,5 @@ sudo apt install nginx
 cd /etc/nginx/sites-available
 sudo nano leaderboard_proxy.conf
 sudo ln -s /etc/nginx/sites-available/leaderboard_proxy.conf /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo service nginx restart
