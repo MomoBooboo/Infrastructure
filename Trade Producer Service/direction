@@ -1,0 +1,3 @@
+#forTesting
+python trade_producer.py
+python test_trade_producer.py
