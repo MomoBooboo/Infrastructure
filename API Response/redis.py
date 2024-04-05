@@ -21,6 +21,9 @@ def get_leaderboard():
 
     # Return the fetched data
     return jsonify(leaderboard_data)
+#adjust cache expiry
+redis_client.set('leaderboard_data', leaderboard_data)
+redis_client.expire('leaderboard_data', 3600)  # Cache expiry time in seconds (e.g., 1 hour)
 
 if __name__ == '__main__':
     app.run(debug=True)
