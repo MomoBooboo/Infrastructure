@@ -1,0 +1,8 @@
+# Launch EC2 instance for EC2_A
+aws ec2 run-instances --image-id <image-id> --instance-type <instance-type> --key-name <key-pair-name> --security-group-ids <security-group-id> --count 1 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=EC2_A}]'
+
+# Launch EC2 instance for EC2_B (Postgres)
+aws ec2 run-instances --image-id <image-id> --instance-type <instance-type> --key-name <key-pair-name> --security-group-ids <security-group-id> --count 1 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=EC2_B}]'
+
+# Launch EC2 instance for EC2_C (Redis)
+aws ec2 run-instances --image-id <image-id> --instance-type <instance-type> --key-name <key-pair-name> --security-group-ids <security-group-id> --count 1 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=EC2_C}]'
