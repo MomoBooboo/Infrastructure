@@ -1,0 +1,5 @@
+version: '3'
+services:
+  postgres:
+    image: <postgres_image>
+    # Add any additional configuration as needed
