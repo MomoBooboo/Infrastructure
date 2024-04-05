@@ -1,0 +1,12 @@
+
+version: '3'
+services:
+  leaderboard:
+    image: <leaderboard_service_image>
+    ports:
+      - "80:80"
+    # Add any additional configuration as needed
+
+  trade-producer:
+    image: <trade_producer_service_image>
+    # Add any additional configuration as needed
