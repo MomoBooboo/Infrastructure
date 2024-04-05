@@ -1,0 +1,11 @@
+leaderboard-service/
+│
+├── app/
+│   ├── __init__.py
+│   ├── models.py         # Define data models (e.g., User, Trade)
+│   ├── routes.py         # Define API routes and controllers
+│   └── services.py       # Implement leaderboard logic
+│
+├── Dockerfile            # Dockerfile for building the Docker image
+├── requirements.txt      # List of Python dependencies
+└── run.py                # Entry point to run the Flask app
