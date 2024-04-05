@@ -1,0 +1,4 @@
+trade-producer-service/
+│
+├── trade_producer.py      # Main script for the Trade Producer Service
+└── requirements.txt        # List of dependencies
