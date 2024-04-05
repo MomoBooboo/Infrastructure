@@ -1,0 +1,5 @@
+version: '3'
+services:
+  redis:
+    image: <redis_image>
+    # Add any additional configuration as needed
