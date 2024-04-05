@@ -1,0 +1,8 @@
+# Create directory for EC2_A
+mkdir docker-compose-ec2-a
+
+# Create directory for EC2_B
+mkdir docker-compose-ec2-b
+
+# Create directory for EC2_C
+mkdir docker-compose-ec2-c
